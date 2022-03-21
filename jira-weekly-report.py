@@ -4,7 +4,7 @@ from atlassian import Jira
 jira = Jira(
     url='https://example.atlassian.net/',
     username='sebastian.viana@example.com',
-    password='K2d5tCcXGq3gZQFm')
+    password='K2d5tCcXGq3gZQFm') # password randomly generated for public sharing purposes
 
 jql_request = 'project in (SOP, OB) AND issuetype in (Support, Problem) AND "Source[Dropdown]" = Support AND "Technology[Dropdown]" = "Veeam Backup & Replication" AND "Customer Request Type" in ("Operational task request (OB)", "Incident request (SOP)") AND created >= -1w'
 
